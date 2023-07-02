@@ -23,8 +23,7 @@ class DatabaseSeeder extends Seeder
         // ]);
         $faker = Faker::create();
         foreach (range(1,500) as $index) {
-            DB::table('employees')->insert(
-                [
+            DB::table('employees')->insert([
                     'firstname' => $faker->firstname,
                     'lastname' => $faker -> lastname,
                     'email' => $faker -> email,
