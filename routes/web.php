@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [EmployeeController::class, 'getDat']);
+Route::get('/', [EmployeeController::class, 'getData']);
